@@ -1,0 +1,34 @@
+# --- Trazas de red ---
+*.pcap
+*.pcap.gz
+*.bin
+traza*
+data/
+
+# --- Binarios compilados ---
+pcap2bin
+exact_hh
+test_sketches
+window_demo
+sliding_window
+*.o
+*.out
+*.exe
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# --- Salidas voluminosas de experimentos ---
+*.csv
+!results/**/*.csv
+
+# --- Sistema / editor ---
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
