@@ -2,7 +2,6 @@
 
 ## Archivos
 
-- `sketches.hpp`: CMS y CountSketch originales, con una corrección de portabilidad para MSVC (`_umul128`).
 - `sliding_window.hpp`: anillo de 6 subventanas de 10 s y sketch agregado.
 - `activity1.cpp`: programa principal, lectura de `traza.bin`, validación, CSV y memoria.
 - `Makefile`: compilación en WSL/Linux.
