@@ -1,10 +1,20 @@
 CXX ?= g++
-CXXFLAGS ?= -O2 -std=c++17 -Wall -Wextra -pedantic
+CXXFLAGS ?= -O2 -march=native -std=c++17 -Wall -Wextra -pedantic
 
-all: activity1
+.PHONY: all clean
+all: pcap2bin exact_hh test_sketches activity1
+
+pcap2bin: pcap2bin.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
+exact_hh: exact_hh.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
+test_sketches: test_sketches.cpp sketches.hpp
+	$(CXX) $(CXXFLAGS) -o $@ $<
 
 activity1: activity1.cpp sketches.hpp sliding_window.hpp
-	$(CXX) $(CXXFLAGS) -o activity1 activity1.cpp
+	$(CXX) $(CXXFLAGS) -o activity1 activity1.cpp	
 
 clean:
-	rm -f activity1
+	rm -f pcap2bin exact_hh test_sketches activity1
