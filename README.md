@@ -49,4 +49,4 @@ python3 scripts/gen_synthetic.py 300000 synthetic.bin
 
 ## Semilla utilizada
 
-Semilla usada por el grupo para `inject_attack.py`: `<completar>`.
+Semilla usada por el grupo para `inject_attack.py`: `<67>`.
