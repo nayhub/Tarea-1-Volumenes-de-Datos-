@@ -50,3 +50,8 @@ python3 scripts/gen_synthetic.py 300000 synthetic.bin
 ## Semilla utilizada
 
 Semilla usada por el grupo para `inject_attack.py`: `<67>`.
+
+## Traza utilizada 
+
+https://mawi.wide.ad.jp/mawi/samplepoint-F/2018/201812031400.pcap.gz
+
